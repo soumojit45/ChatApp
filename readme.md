@@ -1,3 +1,4 @@
+```markdown
 <div align="center">
   <h1>✨ AI Chat Assistant</h1>
   <p>A full-stack, responsive AI chat platform featuring secure authentication, modern UI/UX, and real-time token tracking.</p>
@@ -57,12 +58,13 @@
 │
 └── GPT_Frontend/            # React Vite Frontend
     ├── src/
-    ├── components/      # Reusable UI components
-    ├── pages/           # Route views (Signup, Login, Home, Chat)
-    ├── schema/          # Frontend Zod schemas
-    ├── store/           # State management
-    ├── App.jsx          # Router configuration
-    └── main.jsx         # App entry point
+    │   ├── components/      # Reusable UI components
+    │   ├── pages/           # Route views (Signup, Login, Home, Chat)
+    │   ├── schema/          # Frontend Zod schemas
+    │   ├── store/           # State management
+    │   ├── App.jsx          # Router configuration
+    │   └── main.jsx         # App entry point
+
 ```
 
 ---
@@ -70,54 +72,63 @@
 ## ⚙️ Local Development Setup
 
 ### 1. Clone the Repository
+
 ```bash
-git clone https://github.com/yourusername/chat-assistant.git
+git clone [https://github.com/yourusername/chat-assistant.git](https://github.com/yourusername/chat-assistant.git)
 cd chat-assistant
+
 ```
 
 ### 2. Backend Setup
+
 ```bash
 cd ChatgptBackend
 npm install
+
 ```
+
 Create a `.env` file in the `ChatgptBackend` directory:
+
 ```env
 PORT=5000
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_super_secret_key
+
 ```
+
 Start the backend server:
+
 ```bash
 npm run dev
+
 ```
 
 ### 3. Frontend Setup
+
 Open a new terminal window:
+
 ```bash
 cd GPT_Frontend
 npm install
+
 ```
+
 Start the Vite development server:
+
 ```bash
 npm run dev
+
 ```
 
 ---
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! 
-Feel free to check the issues page.
 
 ---
 
 ## 👨‍💻 Author
 
 **Soumojit Ghosh**
-* GitHub: [@yourusername](https://github.com/yourusername)
+
+* GitHub: [@Soumojit Ghosh](https://github.com/soumojit45)
 * LinkedIn: [Soumojit Ghosh](https://linkedin.com/in/yourprofile)
 
 ---
-<div align="center">
-  <i>Built with ❤️ and JavaScript.</i>
-</div>
