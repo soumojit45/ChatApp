@@ -6,10 +6,17 @@ import messageRouter from "./routes/msgRouter.js"
 import chatRouter from "./routes/chatRouter.js"
 import connectDB from "./config/database.js"
 import { connectRedis } from "./config/redis.js"
+import cors from "cors"
 
 // dotenv.config()
 
-const app = express()
+const app = express();
+app.use(
+    cors({
+        origin: "http://localhost:5173",
+        credentials: true,
+    })
+);
 
 app.use(express.json())
 app.use(cookieParser())
@@ -32,7 +39,7 @@ const startServer = async () => {
             console.log(`Server has started listenting at port ${process.env.PORT}`);
         })
     } catch (error) {
-            console.log(error)
+        console.log(error)
     }
 }
 

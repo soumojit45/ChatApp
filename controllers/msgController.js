@@ -163,7 +163,7 @@ export const sendMessage = async (req, res) => {
             usage,
             tokenUsed,
             tokenLimit: Number(process.env.TOKEN_LIMIT),
-            // assistantMessage,
+            assistantMessage,
         });
 
         await updateSummaryIfNeeded(chat._id);
